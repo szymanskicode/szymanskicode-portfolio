@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   line-height: 1.6;
   color: var(--primary-color);
   font-size: 1.1rem;
@@ -135,7 +135,6 @@ section.main {
   padding-top: 50px;
 }
 
-
 /* SECTION ABOUT */
 .section-about {
   padding: 2rem 0;
@@ -159,17 +158,16 @@ section.main {
 
 .section-about .signature {
   display: inline-block;
-  font-family: 'Sacramento', sans-serif;
+  font-family: "Sacramento", sans-serif;
   font-size: 30px;
   transform: rotate(-5deg);
   margin-right: 45px;
 }
 
-
 /* SECTION PROJECTS */
 .section-projects {
   position: relative;
-  background: url('../img/workspace.jpg') no-repeat center center;
+  background: url("../img/workspace.jpg") no-repeat center center;
   background-size: cover;
   -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
@@ -198,7 +196,6 @@ section.main {
   max-width: 900px;
   padding: 5rem 0.5rem;
 }
-
 
 /* LANGUAGE SELECT FIELD */
 #language {
@@ -271,26 +268,35 @@ section.main {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-
 /* BUTTON */
 .btn {
   width: 180px;
   height: 40px;
   padding: 10px 25px;
+  margin-bottom: 5px;
   border: 2px solid #333;
+  border-radius: 2px;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  outline: none
+  outline: none;
+}
+
+.btn.invert {
+  border: 2px solid #f2f2f2;
 }
 
 .btn-bg-rotate {
   z-index: 2;
   transition: all 0.3s ease;
   overflow: hidden;
+}
+
+.btn-bg-rotate.invert {
+  color: #fff;
 }
 
 .btn-bg-rotate:after {
@@ -305,23 +311,39 @@ section.main {
 }
 
 .btn-bg-rotate:hover {
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .2),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.15),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.12),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.15),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.13);
   color: #fff;
+}
+.btn-bg-rotate.invert:hover {
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.15),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.12),
+    inset -4px -4px 6px 0 rgba(0, 0, 0, 0.15),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.13);
+  color: #333;
 }
 
 .btn-bg-rotate:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
   background: #333;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .2),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.15),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.12),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.15),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.13);
 }
 
+.btn-bg-rotate.invert:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  background: #f2f2f2;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.15),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.12),
+    inset -4px -4px 6px 0 rgba(0, 0, 0, 0.15),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.13);
+}
 
 /* MOUSE SCROLL ICON */
 .scrolldown-wrapper {
@@ -440,7 +462,6 @@ section.main {
   }
 }
 
-
 /* CAROUSEL */
 .carousel-wrapper {
   overflow: hidden;
@@ -467,7 +488,7 @@ section.main {
   margin: auto;
   padding: 1rem 4rem;
   z-index: 100;
-  transition: transform .5s, opacity .5s, z-index .5s;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
   /* border: 1px solid rgba(255, 255, 255, 0.1) */
 }
 
@@ -498,8 +519,9 @@ section.main {
   width: 3rem;
   height: 3rem;
   background-color: rgb(255, 255, 255, 0.5);
+  background-color: transparent;
   transform: translateY(-50%);
-  border-radius: 50%;
+  border-radius: 2px;
   cursor: pointer;
   z-index: 1001;
   border: none;
@@ -508,30 +530,37 @@ section.main {
 .carousel-button--prev:hover,
 .carousel-button--next:hover {
   background-color: rgb(255, 255, 255, 0.8);
+  background-color: transparent;
 }
 
 .carousel-button--prev {
-  left: 0;
+  left: 17px;
 }
 
 .carousel-button--next {
-  right: 0;
+  right: 17px;
 }
 
 .carousel-button--prev::after,
 .carousel-button--next::after {
   content: " ";
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   top: 50%;
-  left: 54%;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  left: 60%;
+  border-right: 2px solid rgb(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgb(255, 255, 255, 0.5);
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
+.carousel-button--prev:hover::after,
+.carousel-button--next:hover::after {
+  border-right: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+}
+
 .carousel-button--next::after {
-  left: 47%;
+  left: 40%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
