@@ -1,225 +1,237 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>
+      Piotr Szymański - szymanskicode | Fullstack developer | portfolio
+    </title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<title>
-		Piotr Szymański - szymanskicode | Fullstack developer | portfolio
-	</title>
-</head>
+  <body id="body" class="pl">
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="#about"
+            >szymanski<span style="font-weight: 900">code</span></a
+          >
+        </h1>
 
-<body id="body" class="pl">
-	<nav class="navbar">
-		<div class="container">
-			<h1 class="logo">
-				<a href="#about">szymanski<span style="font-weight: 900">code</span></a>
-			</h1>
+        <div id="language">
+          <i class="bi bi-globe" style="margin-right: 5px"></i>
+          <div class="custom-select" style="width: 45px">
+            <select>
+              <option id="deflng" value="default" selected>PL</option>
+              <option value="pl">PL</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </div>
 
-			<div id="language" class="hide-sm">
-				<i class="bi bi-globe" style="margin-right: 5px"></i>
-				<div class="custom-select" style="width: 45px">
-					<select>
-						<option id="deflng" value="default" selected>PL</option>
-						<option value="pl">PL</option>
-						<option value="en">EN</option>
-					</select>
-				</div>
-			</div>
+        <!-- Navigation - polish -->
+        <ul style="display: none" class="nav pl">
+          <li>
+            <a href="#about">
+              <span class="hide-lg"><i class="bi bi-person"></i></span>
+              <span class="hide-sm">O mnie</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <span class="hide-lg"><i class="bi bi-grid"></i></span>
+              <span class="hide-sm">Projekty</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
+              <span class="hide-sm">Umiejętności</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="hide-lg"><i class="bi bi-envelope"></i></span>
+              <span class="hide-sm">Kontakt</span>
+            </a>
+          </li>
+        </ul>
 
-			<!-- Navigation - polish -->
-			<ul style="display: none" class="nav pl">
-				<li>
-					<a href="#about">
-						<span class="hide-lg"><i class="bi bi-person"></i></span>
-						<span class="hide-sm">O mnie</span>
-					</a>
-				</li>
-				<li>
-					<a href="#projects">
-						<span class="hide-lg"><i class="bi bi-grid"></i></span>
-						<span class="hide-sm">Projekty</span>
-					</a>
-				</li>
-				<li>
-					<a href="#skills">
-						<span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
-						<span class="hide-sm">Umiejętności</span>
-					</a>
-				</li>
-				<li>
-					<a href="#contact">
-						<span class="hide-lg"><i class="bi bi-envelope"></i></span>
-						<span class="hide-sm">Kontakt</span>
-					</a>
-				</li>
-			</ul>
+        <!-- Navigation - english -->
+        <ul style="display: none" class="nav en">
+          <li>
+            <a href="#about">
+              <span class="hide-lg"><i class="bi bi-person"></i></span>
+              <span class="hide-sm">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <span class="hide-lg"><i class="bi bi-grid"></i></span>
+              <span class="hide-sm">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
+              <span class="hide-sm">Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="hide-lg"><i class="bi bi-envelope"></i></span>
+              <span class="hide-sm">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-			<!-- Navigation - english -->
-			<ul style="display: none" class="nav en">
-				<li>
-					<a href="#about">
-						<span class="hide-lg"><i class="bi bi-person"></i></span>
-						<span class="hide-sm">About</span>
-					</a>
-				</li>
-				<li>
-					<a href="#projects">
-						<span class="hide-lg"><i class="bi bi-grid"></i></span>
-						<span class="hide-sm">Projects</span>
-					</a>
-				</li>
-				<li>
-					<a href="#skills">
-						<span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
-						<span class="hide-sm">Skills</span>
-					</a>
-				</li>
-				<li>
-					<a href="#contact">
-						<span class="hide-lg"><i class="bi bi-envelope"></i></span>
-						<span class="hide-sm">Contact</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+    <!-- SECTION ABOUT -->
+    <section id="about" class="main section-about">
+      <div class="container">
+        <div>
+          <h1 style="margin-bottom: 30px">
+            <span style="display: none" class="pl"
+              >Witaj na stronie twojego przyszłego Fullstack Developera!</span
+            >
+            <span style="display: none" class="en"
+              >Welcome to your future Fullstack Developer website!</span
+            >
+          </h1>
+          <h3 style="font-weight: 100">
+            <span style="display: none" class="pl"
+              >"Potrafię stworzyć wszystko, co tylko zechcesz. Jeśli nie,
+              wystarczy że dasz mi odrobinę czasu."</span
+            >
+            <span style="display: none" class="en"
+              >"I can create anything you wish, if i can't, just give me a
+              little bit of time."</span
+            >
+          </h3>
+          <p style="text-align: right; margin-bottom: 30px">
+            <span class="signature">Piotr Szymański</span>
+          </p>
+          <p style="margin-bottom: 15px">
+            Typescript / Javascript, SCSS, React, Next.js & Node.js
+          </p>
+          <button class="btn btn-bg-rotate">
+            <span style="display: none" class="pl">Więcej o mnie</span>
+            <span style="display: none" class="en">More about me</span>
+          </button>
+        </div>
+        <img src="./img/szymanskicode.png" alt="Piotr Szymański" />
+      </div>
+    </section>
 
-	<!-- SECTION ABOUT -->
-	<section id="about" class="main section-about">
-		<div class="container">
-			<div>
-				<h1 style="margin-bottom: 30px">
-					<span style="display: none" class="pl">Witaj na stronie
-						twojego przyszłego Fullstack Developera!</span>
-					<span style="display: none" class="en">Welcome to your
-						future Fullstack Developer website!</span>
-				</h1>
-				<h3 style="font-weight: 100">
-					<span style="display: none" class="pl">" Potrafię
-						stworzyć wszystko, co tylko zechcesz. Jeśli nie,
-						wystarczy że dasz mi odrobinę czasu."</span>
-					<span style="display: none" class="en">" I can create
-						anything you wish, if i can't, just give me a
-						little bit of time."</span>
-				</h3>
-				<p style="text-align: right; margin-bottom: 30px">
-					<span class="signature">Piotr Szymański</span>
-				</p>
-				<p style="margin-bottom: 15px">
-					Javascript, SCSS, React, Next.js & Node.js
-				</p>
-				<button class="btn btn-bg-rotate">
-					<span style="display: none" class="pl">Więcej o mnie</span>
-					<span style="display: none" class="en">More about me</span>
-				</button>
-			</div>
-			<img src="./img/szymanskicode.png" alt="Piotr Szymański" />
-		</div>
-	</section>
+    <!-- SECTION PROJECTS -->
+    <section id="projects" class="main section-projects">
+      <div class="overlay">
+        <div class="section-projects-inner">
+          <div style="width: 100%">
+            <div class="carousel-wrapper">
+              <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-div initial">
+                  <img
+                    src="img/project-adfinder.jpg"
+                    alt="Adfinder project"
+                    style="border: 1px solid transparent"
+                  />
+                </div>
 
-	<!-- SECTION PROJECTS -->
-	<section id="projects" class="main section-projects">
-		<div class="overlay">
-			<div class="section-projects-inner">
-				<div style="width: 100%">
-					<div class="carousel-wrapper">
-						<div class="carousel">
-							<!-- Slide 1 -->
-							<div class="carousel-div initial">
-								<img src="img/project-adfinder.jpg" alt="Adfinder project" style="border: 1px solid transparent" />
-							</div>
+                <!-- Slide 2 -->
+                <div class="carousel-div">
+                  <img
+                    src="img/project-memory.jpg"
+                    alt="Memory project"
+                    style="border: 1px solid transparent"
+                  />
+                </div>
 
-							<!-- Slide 2 -->
-							<div class="carousel-div">
-								<img src="img/project-memory.jpg" alt="Memory project" style="border: 1px solid transparent" />
-							</div>
+                <!-- Slide 3 -->
+                <div class="carousel-div">
+                  <h3>Przykładowy tytuł 1</h3>
+                  <h2>Przykładowy podtytuł 1</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis aliquid molestiae laboriosam perferendis,
+                    voluptatem ratione culpa consectetur ipsa placeat eaque.
+                  </p>
+                </div>
 
-							<!-- Slide 3 -->
-							<div class="carousel-div">
-								<h3>Przykładowy tytuł 1</h3>
-								<h2>Przykładowy podtytuł 1</h2>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit.
-									Veritatis aliquid molestiae laboriosam
-									perferendis,
-									voluptatem ratione culpa consectetur
-									ipsa placeat eaque.
-								</p>
-							</div>
+                <!-- Slide 4 -->
+                <div class="carousel-div">
+                  <h3>Przykładowy tytuł 2</h3>
+                  <h2>Przykładowy podtytuł 2</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis aliquid molestiae laboriosam perferendis,
+                    voluptatem ratione culpa consectetur ipsa placeat eaque.
+                  </p>
+                </div>
 
-							<!-- Slide 4 -->
-							<div class="carousel-div">
-								<h3>Przykładowy tytuł 2</h3>
-								<h2>Przykładowy podtytuł 2</h2>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit.
-									Veritatis aliquid molestiae laboriosam
-									perferendis,
-									voluptatem ratione culpa consectetur
-									ipsa placeat eaque.
-								</p>
-							</div>
+                <!-- Slide 5 -->
+                <div class="carousel-div">
+                  <h3>Przykładowy tytuł 3</h3>
+                  <h2>Przykładowy podtytuł 3</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis aliquid molestiae laboriosam perferendis,
+                    voluptatem ratione culpa consectetur ipsa placeat eaque.
+                  </p>
+                </div>
 
-							<!-- Slide 5 -->
-							<div class="carousel-div">
-								<h3>Przykładowy tytuł 3</h3>
-								<h2>Przykładowy podtytuł 3</h2>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit.
-									Veritatis aliquid molestiae laboriosam
-									perferendis,
-									voluptatem ratione culpa consectetur
-									ipsa placeat eaque.
-								</p>
-							</div>
+                <div class="carousel-button--next"></div>
+                <div class="carousel-button--prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<div class="carousel-button--next"></div>
-							<div class="carousel-button--prev"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- SECTION SKILLS -->
+    <section id="skills" class="main section-skills">
+      <div class="container">
+        <h2>Umiejętności</h2>
+      </div>
+    </section>
 
-	<!-- SECTION SKILLS -->
-	<section id="skills" class="main section-skills">
-		<div class="container">
-			<h2>Umiejętności</h2>
-		</div>
-	</section>
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="main section-contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <!-- TODO -->
+        <p style="opacity: 0.35">// W przygotowaniu...</p>
+      </div>
+    </section>
 
-	<!-- SECTION CONTACT -->
-	<section id="contact" class="main section-contact">
-		<div class="container">
-			<h2>Kontakt</h2>
-			<!-- TODO -->
-			<p style="opacity: 0.35">// W przygotowaniu...</p>
-		</div>
-	</section>
+    <!-- SCROLLDOWN ICON-->
+    <div id="scroll" class="scrolldown-wrapper">
+      <div class="scrolldown" style="--color: #555">
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+    </div>
 
-	<!-- SCROLLDOWN ICON-->
-	<div id="scroll" class="scrolldown-wrapper">
-		<div class="scrolldown" style="--color: #555">
-			<div class="chevrons">
-				<div class="chevrondown"></div>
-				<div class="chevrondown"></div>
-			</div>
-		</div>
-	</div>
-
-	<script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
