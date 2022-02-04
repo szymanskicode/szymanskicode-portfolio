@@ -17,6 +17,27 @@
 </head>
 
 <body id="body" class="pl">
+  <!-- Modal about me -->
+  <div id="modal" style="display: none;">
+    <div class="modal-inner">
+      <!-- <span id="hide-more"><i class="bi bi-x-lg"></i> close</span> -->
+      <button id="hide-more" class="btn btn-bg-rotate invert">
+        <span style="display: none" class="pl">Zamknij</span>
+        <span style="display: none" class="en">Close</span>
+      </button>
+      <div class="modal-content">
+        <p>
+          <strong>Imię i nazwisko:</strong>
+          Piotr Szymański
+        </p>
+        <p>
+          <strong>Data ur.:</strong>
+          02.1986
+        </p>
+      </div>
+    </div>
+  </div>
+
   <nav class="navbar">
     <div class="container">
       <h1 class="logo">
@@ -112,7 +133,7 @@
         <p style="margin-bottom: 15px">
           Typescript / Javascript, SCSS, React, Next.js & Node.js
         </p>
-        <button class="btn btn-bg-rotate">
+        <button id="show-more" class="btn btn-bg-rotate">
           <span style="display: none" class="pl">Więcej o mnie</span>
           <span style="display: none" class="en">More about me</span>
         </button>
@@ -961,8 +982,8 @@
           <span style="display: none" class="en">Contact</span>
         </h2>
         <p class="subheading">
-          <span style="display: none" class="pl">W przypadku zapytań, lub ofert, zapraszam do kontaktu. Z przyjemnością
-            spotkam się osobiście, lub zdalenie w zależności od potrzeby.</span>
+          <span style="display: none" class="pl">Wszelkie zapytania i oferty proszę kierować na poniższe dane. Z
+            przyjemnością spotkam się osobiście, lub zdalenie w zależności od potrzeby.</span>
           <span style="display: none" class="en">Feel free to contact me with any inquiries or offers. I will be happy
             to meet you in person or remotely, depending on your expectations.</span>
         </p>

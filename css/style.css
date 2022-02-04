@@ -181,6 +181,58 @@ section.main {
   margin-right: 45px;
 }
 
+/* Modal */
+#modal {
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--overlay-color);
+  color: var(--primary-color);
+  z-index: 1000;
+}
+
+.show-modal #modal {
+  display: flex !important;
+}
+
+body.show-modal {
+  overflow: hidden;
+}
+
+#modal .modal-inner {
+  position: relative;
+  width: 90%;
+  width: calc(100% - 30px);
+  max-width: 500px;
+  padding: 15px;
+}
+
+#modal .modal-inner button {
+  display: block;
+  margin-left: auto;
+  margin-right: 2px;
+}
+
+#modal .modal-inner span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#modal .modal-content {
+  width: 100%;
+  background-color: var(--light-bg-color-1);
+  padding: 15px;
+  border: 2px solid var(--primary-color);
+  max-height: 90vh;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+}
+
 /* SECTION PROJECTS */
 .section-projects {
   position: relative;
