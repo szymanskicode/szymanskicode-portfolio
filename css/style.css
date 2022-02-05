@@ -208,7 +208,7 @@ body.show-modal {
   position: relative;
   width: 90%;
   width: calc(100% - 30px);
-  max-width: 500px;
+  max-width: 550px;
   padding: 15px;
 }
 
@@ -216,11 +216,6 @@ body.show-modal {
   display: block;
   margin-left: auto;
   margin-right: 2px;
-}
-
-#modal .modal-inner span:hover {
-  opacity: 1;
-  cursor: pointer;
 }
 
 #modal .modal-content {
@@ -231,6 +226,33 @@ body.show-modal {
   max-height: 90vh;
   max-height: calc(100vh - 100px);
   overflow: auto;
+}
+
+#modal .modal-content p {
+  margin-bottom: 10px;
+}
+
+#modal ul {
+  list-style: disc;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#modal li {
+  font-size: 14px;
+}
+
+span.label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.75 !important;
+}
+
+span.info {
+  display: block;
+  font-size: 14px;
 }
 
 /* SECTION PROJECTS */
@@ -383,6 +405,7 @@ body.show-modal {
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.13);
   color: #fff;
 }
+
 .btn-bg-rotate.invert:hover {
   box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.15),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.12),
@@ -629,6 +652,25 @@ body.show-modal {
 .carousel-button--next::after {
   left: 40%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slide-title {
+  text-align: left;
+  font-weight: lighter;
+}
+
+.slide-title .mute,
+.slide-subtitle .mute {
+  opacity: 0.5;
+}
+
+.slide-title .small,
+.slide-subtitle .small {
+  font-size: 80%;
+}
+
+.slide-subtitle {
+  text-align: left;
 }
 
 /* SECTION SKILLS */
