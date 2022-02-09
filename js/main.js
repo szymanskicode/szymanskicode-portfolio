@@ -286,24 +286,3 @@ function revealAddress() {
 
 telBtn.addEventListener("click", revealNumber);
 addBtn.addEventListener("click", revealAddress);
-
-//////////////////
-// MODAL TOGGLE //
-//////////////////
-const showBtn = document.getElementById("show-more");
-const hideBtn = document.getElementById("hide-more");
-
-function toggleModal(isOn) {
-  const bodyEl = document.getElementById("body");
-
-  if (isOn) {
-    bodyEl.classList.add("show-modal");
-  } else {
-    const content = document.getElementsByClassName("modal-content");
-    content[0].scrollTop = 0;
-    bodyEl.classList.remove("show-modal");
-  }
-}
-
-showBtn.addEventListener("click", () => toggleModal(true));
-hideBtn.addEventListener("click", () => toggleModal(false));
