@@ -224,7 +224,7 @@ document.addEventListener("click", closeAllSelect);
     }
   }
 
-  // Previous navigation handler
+  // Prev navigation handler
   function movePrev() {
     // Check if moving
     if (!moving) {
