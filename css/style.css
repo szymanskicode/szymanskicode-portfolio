@@ -84,6 +84,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 30px 2rem;
+  z-index: 1;
 }
 
 .section-header {
@@ -230,16 +231,16 @@ span.info {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.section-projects .container {
+/* .section-projects .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-}
+} */
 
 .section-projects .section-header,
 .section-projects .subheading {
-  color: var(--light-bg-color-1)
+  color: var(--light-bg-color-1);
 }
 
 .section-projects .carousel-wrapper {
@@ -787,13 +788,6 @@ span.info {
   background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
   color: var(--light-bg-color-1);
-}
-
-.section-contact .container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
 }
 
 .section-contact .overlay {
