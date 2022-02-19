@@ -230,6 +230,18 @@ span.info {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.section-projects .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.section-projects .section-header,
+.section-projects .subheading {
+  color: var(--light-bg-color-1)
+}
+
 .section-projects .carousel-wrapper {
   overflow: hidden;
   width: 100%;
@@ -241,17 +253,15 @@ span.info {
 }
 
 .section-projects .section-projects-inner {
-  color: #fff;
+  color: var(--light-bg-color-1);
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   max-width: 900px;
-  padding: 5rem 0.5rem;
 }
 
 .section-projects .carousel {
@@ -267,13 +277,20 @@ span.info {
   top: 0;
   width: 100%;
   margin: auto;
-  padding: 1rem 4rem;
+  padding: 0px 4rem;
+  padding-top: 15px;
   z-index: 100;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
 
 .section-projects .carousel-div img {
   margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 420px) {
+  .section-projects .carousel-div img {
+    display: none;
+  }
 }
 
 .section-projects .carousel-div.initial,
@@ -371,6 +388,13 @@ span.info {
   margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 640px) {
+  .section-projects .slide-subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 .section-projects .slide-badges {
   text-align: left;
   margin-bottom: 5px;
@@ -383,8 +407,9 @@ span.info {
   margin: 0 5px 5px 0;
   border-radius: 500px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: var(--light-bg-color-1); */
-  /* color: var(--primary-color); */
+  color: var(--light-bg-color)
+    /* background-color: var(--light-bg-color-1); */
+    /* color: var(--primary-color); */
 }
 
 /* LANGUAGE SELECT FIELD */
