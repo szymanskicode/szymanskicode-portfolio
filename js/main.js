@@ -25,13 +25,13 @@ const selectEl = document.getElementById("deflng");
 // Clear default pl class attribute:
 bodyEl.removeAttribute("class");
 switch (lang) {
-  case "en":
-    bodyEl.classList.add("en");
+  case "pl":
+    bodyEl.classList.add("pl");
     // Set default text in select field:
-    selectEl.innerHTML = "EN";
+    selectEl.innerHTML = "PL";
     break;
   default:
-    bodyEl.classList.add("pl");
+    bodyEl.classList.add("en");
 }
 
 ///////////////////////////
@@ -129,10 +129,7 @@ document.addEventListener("click", closeAllSelect);
 ///////////////////////
 !(function (d) {
   var itemClassName = "carousel-div";
-  (items = d.getElementsByClassName(itemClassName)),
-    (totalItems = items.length),
-    (slide = 0),
-    (moving = true);
+  (items = d.getElementsByClassName(itemClassName)), (totalItems = items.length), (slide = 0), (moving = true);
 
   // To initialise the carousel we'll want to update the DOM with our own classes
   function setInitialClasses() {
