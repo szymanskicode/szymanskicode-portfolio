@@ -27,11 +27,13 @@ bodyEl.removeAttribute("class");
 switch (lang) {
   case "pl":
     bodyEl.classList.add("pl");
+    document.documentElement.lang = "pl";
     // Set default text in select field:
     selectEl.innerHTML = "PL";
     break;
   default:
     bodyEl.classList.add("en");
+    document.documentElement.lang = "en";
 }
 
 ///////////////////////////
@@ -75,9 +77,11 @@ for (i = 0; i < l; i++) {
           // Add selected value to body tag as class:
           const bodyEl = document.getElementById("body");
           bodyEl.removeAttribute("class");
-          bodyEl.classList.add(this.innerHTML.toLowerCase());
+          const newLang = this.innerHTML.toLowerCase();
+          bodyEl.classList.add(newLang);
+          document.documentElement.lang = newLang;
           // Save users choice to local storage:
-          localStorage.setItem("lang", this.innerHTML.toLowerCase());
+          localStorage.setItem("lang", newLang);
           break;
         }
       }

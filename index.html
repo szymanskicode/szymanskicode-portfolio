@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link
@@ -27,36 +27,26 @@
       content="Piotr Szymański - szymanskicode.pl"
     />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
+      rel="preload"
+      href="./img/photo-en.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
     />
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
+      rel="preload"
+      href="./fonts/catamaran-latin.woff2"
+      as="font"
+      type="font/woff2"
       crossorigin
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-    />
+    <style>@font-face{font-family:"Catamaran";font-style:normal;font-weight:400;font-display:swap;src:url("./fonts/catamaran-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Catamaran";font-style:normal;font-weight:400;font-display:swap;src:url("./fonts/catamaran-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Sacramento";font-style:normal;font-weight:400;font-display:swap;src:url("./fonts/sacramento-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Sacramento";font-style:normal;font-weight:400;font-display:swap;src:url("./fonts/sacramento-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}:root{--light-bg-color:#fff;--light-bg-color-1:#f2f2f2;--primary-color:#333;--secondary-color:#595959;--overlay-color:rgba(0,0,0,0.7)}*{box-sizing:border-box;margin:0;padding:0}button{font-family:inherit;font-size:inherit;color:inherit;background:none;border:none}.ui-icon{display:inline-block;vertical-align:-0.125em;fill:currentColor}.contact-icon{display:block;margin:30px 5px;color:var(--light-bg-color-1)}.lang-photo{display:none}body.pl img.pl.lang-photo,body.en img.en.lang-photo{display:block}html{font-size:16px;scroll-behavior:smooth}@media (min-width:650px){.hide-lg{display:none !important}}@media (max-width:649px){.hide-sm{display:none !important}}body{font-family:"Catamaran",sans-serif;line-height:1.6;color:var(--primary-color);font-size:1.1rem}h1,h2,h3,h4{line-height:1.3}a{color:var(--secondary-color);text-decoration:none}a:hover{color:var(--primary-color);text-decoration:none}a.btn{display:inline-block;font-weight:400;line-height:1.5;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;padding:0.375rem 0.75rem;font-size:1rem;border-radius:2px}ul{list-style:none}img{width:100%;height:auto}.container{width:100%;max-width:1100px;margin:auto;overflow:hidden;padding:30px 2rem;z-index:1}.section-header{width:100%;font-weight:normal;margin-bottom:30px}.subheading{margin-top:-15px;margin-bottom:30px}.section-header.big{font-size:250%;font-weight:lighter}nav.navbar{position:fixed;top:0;width:100%;height:50px;background:var(--light-bg-color);-webkit-box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1);box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1);z-index:999}nav.navbar .container{display:flex;height:100%;padding:0px 30px;align-content:center;align-items:center;overflow:visible}nav.navbar .container ul{padding-top:4px}nav.navbar .container i{line-height:0}.logo{flex-grow:1;transition:all 0.1s linear;font-weight:100}@media (max-width:700px){.logo{font-size:95%}}.logo a{color:var(--primary-color)}.nav li{display:inline;padding:0.2rem 0.7rem;padding-right:0;transition:all 0.1s linear}body.pl .pl{display:block !important}body.en .en{display:block !important}section.main{display:flex;justify-content:center;min-height:100vh;padding-top:50px}.section-about{padding:2rem 0;background:var(--light-bg-color-1)}.section-about .container{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:3rem;align-items:center;justify-content:center;padding:2rem}@media (max-width:649px){.section-about .container{grid-template-columns:repeat(1,1fr)}}.section-about .signature{display:inline-block;font-family:"Sacramento",sans-serif;font-size:30px;transform:rotate(-5deg);margin-right:45px}span.label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:1px;opacity:0.75 !important}span.info{display:block;font-size:14px}.section-projects{position:relative;background:url("./img/bg.webp") no-repeat center center;background-size:cover;-webkit-box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1);box-shadow:0px 0px 24px 0px rgba(0,0,0,0.1)}.section-projects .overlay{position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,0.8)}.section-projects .section-header,.section-projects .subheading{color:var(--light-bg-color-1)}.section-projects .carousel-wrapper{overflow:hidden;width:100%;margin:auto}.section-projects .carousel-wrapper *{box-sizing:border-box}.section-projects .section-projects-inner{color:var(--light-bg-color-1);width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;margin:0 auto;max-width:900px}.section-projects .carousel{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;display:flex}.section-projects .carousel-div{opacity:0;position:absolute;top:0;width:100%;margin:auto;padding:0px 4rem;padding-top:15px;z-index:100;transition:transform 0.5s,opacity 0.5s,z-index 0.5s}.section-projects .carousel-div img{margin-bottom:15px}@media only screen and (max-width:420px){.section-projects .carousel-div img{display:none}}.section-projects .carousel-div.initial,.section-projects .carousel-div.active{opacity:1;position:relative;z-index:900}.section-projects .carousel-div.prev,.section-projects .carousel-div.next{z-index:800}.section-projects .carousel-div.prev{transform:translateX(-100%)}.section-projects .carousel-div.next{transform:translateX(100%)}.section-projects .carousel-button--prev,.section-projects .carousel-button--next{position:absolute;top:50%;width:3rem;height:3rem;background-color:rgb(255,255,255,0.5);background-color:transparent;transform:translateY(-50%);border-radius:2px;cursor:pointer;z-index:1001;border:none}.section-projects .carousel-button--prev:hover,.section-projects .carousel-button--next:hover{background-color:rgb(255,255,255,0.8);background-color:transparent}.section-projects .carousel-button--prev{left:17px}.section-projects .carousel-button--next{right:17px}.section-projects .carousel-button--prev::after,.section-projects .carousel-button--next::after{content:" ";position:absolute;width:20px;height:20px;top:50%;left:60%;border-right:2px solid rgb(255,255,255,0.5);border-bottom:2px solid rgb(255,255,255,0.5);transform:translate(-50%,-50%) rotate(135deg)}.section-projects .carousel-button--prev:hover::after,.section-projects .carousel-button--next:hover::after{border-right:2px solid var(--light-bg-color-1);border-bottom:2px solid var(--light-bg-color-1)}.section-projects .carousel-button--next::after{left:40%;transform:translate(-50%,-50%) rotate(-45deg)}.section-projects .slide-title{text-align:left;font-weight:lighter;font-size:24px;margin-bottom:10px}.section-projects .slide-title .mute,.section-projects .slide-subtitle .mute{opacity:0.5}.section-projects .slide-title .small,.section-projects .slide-subtitle .small{font-size:80%}.section-projects .slide-subtitle{text-align:left;margin-bottom:15px}@media only screen and (max-width:640px){.section-projects .slide-subtitle{font-size:14px;line-height:18px}}.section-projects .slide-badges{text-align:left;margin-bottom:5px}.section-projects .slide-badges span{display:inline-block;font-size:14px;padding:5px 15px;margin:0 5px 5px 0;border-radius:500px;background-color:rgba(0,0,0,0.5);color:var(--light-bg-color)}#language{display:flex;justify-content:center;align-items:center}.custom-select{position:relative;font-size:14px}.custom-select select{display:none}.select-selected{background-color:var(--primary-color);height:30px;border-radius:2px}.select-selected.select-arrow-active{border-bottom-left-radius:0;border-bottom-right-radius:0}.select-selected:after{position:absolute;content:"";top:13px;right:7px;width:0;height:0;border:5px solid transparent;border-color:#fff transparent transparent transparent}.select-selected.select-arrow-active:after{border-color:transparent transparent #fff transparent;top:7px}.select-items div,.select-selected{color:#ffffff;padding:5px 7px;border:1px solid transparent;border-color:transparent transparent rgba(0,0,0,0.1) transparent;cursor:pointer}.select-items{position:absolute;background-color:var(--primary-color);border-bottom-left-radius:2px;border-bottom-right-radius:2px;top:100%;left:0;right:0;z-index:99}.select-hide{display:none}.select-items div:hover{background-color:rgba(255,255,255,0.1)}.btn{width:180px;height:40px;padding:10px 25px;margin-bottom:5px;border:2px solid #333;border-radius:2px;font-weight:500;background:transparent;cursor:pointer;transition:all 0.3s ease;position:relative;display:inline-block;outline:none}.btn.invert{border:2px solid var(--light-bg-color-1);color:var(--light-bg-color-1)}.btn-bg-rotate{z-index:2;transition:all 0.3s ease;overflow:hidden}.btn-bg-rotate:after{position:absolute;content:" ";z-index:-1;top:0;left:0;width:100%;height:100%;transition:all 0.3s ease}.btn-bg-rotate:hover{box-shadow:4px 4px 6px 0 rgba(255,255,255,0.15),-4px -4px 6px 0 rgba(116,125,136,0.12),inset -4px -4px 6px 0 rgba(255,255,255,0.15),inset 4px 4px 6px 0 rgba(116,125,136,0.13);color:#fff}.btn-bg-rotate.invert:hover{box-shadow:4px 4px 6px 0 rgba(0,0,0,0.15),-4px -4px 6px 0 rgba(116,125,136,0.12),inset -4px -4px 6px 0 rgba(0,0,0,0.15),inset 4px 4px 6px 0 rgba(116,125,136,0.13);color:#333}.btn-bg-rotate:hover:after{-webkit-transform:scale(2) rotate(180deg);transform:scale(2) rotate(180deg);background:#333;box-shadow:4px 4px 6px 0 rgba(255,255,255,0.15),-4px -4px 6px 0 rgba(116,125,136,0.12),inset -4px -4px 6px 0 rgba(255,255,255,0.15),inset 4px 4px 6px 0 rgba(116,125,136,0.13)}.btn-bg-rotate.invert:hover:after{-webkit-transform:scale(2) rotate(180deg);transform:scale(2) rotate(180deg);background:#f2f2f2;box-shadow:4px 4px 6px 0 rgba(0,0,0,0.15),-4px -4px 6px 0 rgba(116,125,136,0.12),inset -4px -4px 6px 0 rgba(0,0,0,0.15),inset 4px 4px 6px 0 rgba(116,125,136,0.13)}.scrolldown-wrapper{position:fixed;bottom:10px;left:50%;background-color:transparent;display:flex;height:80px;width:50px;flex-direction:row;justify-content:space-evenly;align-items:center;overflow-x:hidden;transform:translateX(-50%);opacity:1;transition:all 1s linear}.scrolldown-wrapper.fade-out{opacity:0}.scrolldown-wrapper.fade-out.hide{display:none}.scrolldown{--color:white;--sizeX:30px;--sizeY:50px;position:relative;width:var(--sizeX);height:var(--sizeY);margin-left:var(sizeX / 2);border:calc(var(--sizeX) / 10 - 1px) solid var(--color);border-radius:50px;box-sizing:border-box;margin-bottom:16px}.scrolldown::before{content:"";position:absolute;bottom:30px;left:50%;width:6px;height:6px;margin-left:-3px;background-color:var(--color);border-radius:100%;animation:scrolldown-anim 2s infinite;box-sizing:border-box;box-shadow:0px -5px 3px 1px #ffffff66}@keyframes scrolldown-anim{0%{opacity:0;height:6px}40%{opacity:1;height:10px}80%{transform:translate(0,20px);height:10px;opacity:0}100%{height:3px;opacity:0}}.chevrons{padding:6px 0 0 0;margin-left:-3px;margin-top:48px;width:30px;display:flex;flex-direction:column;align-items:center}.chevrondown{margin-top:-6px;position:relative;border:solid var(--color);border-width:0 3px 3px 0;display:inline-block;width:10px;height:10px;transform:rotate(45deg)}.chevrondown:nth-child(odd){animation:pulse 500ms ease infinite alternate}.chevrondown:nth-child(even){animation:pulse 500ms ease infinite alternate 250ms}@keyframes pulse{from{opacity:0}to{opacity:0.5}}.section-skills{background-color:var(--light-bg-color-1)}.section-skills .skills-list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:25px;height:100%;padding:30px 40px;margin-bottom:30px}@media only screen and (max-width:1500px){.section-skills .skills-list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:25px;height:100%}}@media only screen and (max-width:768px){.section-skills .skills-list{grid-template-columns:repeat(2,1fr)}}@media only screen and (max-width:540px){.section-skills .skills-list{padding:30px 0}}@media only screen and (max-width:470px){.section-skills .skills-list{grid-template-columns:repeat(1,1fr);padding:30px 0}}.section-skills .skill{font-size:18px;font-weight:600;border-radius:3px;background-color:#fff;transition:.2s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:15px 0;border:1px solid #f5f7f8}.section-skills .skill:hover{border:1px solid rgba(0,0,0,0.15);box-shadow:0 7px 10px -1px rgb(0 75 60 / 10%);transform:translateY(-2px)}.section-skills .skill span{background:#fff;display:flex;align-items:center;height:100%;padding:20px 18px;font-size:30px}.section-skills .skill span img{width:45px;height:auto}.section-skills .skill h3{font-size:18px;font-weight:600;margin-bottom:10px}@media only screen and (max-width:500px){.section-skills .skill h3{font-size:16px}}@media only screen and (max-width:470px){.section-skills .skill h3{font-size:15px}}@media only screen and (max-width:325px){.section-skills .skill h3{font-size:14px}}@media only screen and (max-width:280px){.section-skills .skill h3{font-size:15px}}.section-contact{position:relative;background:url("./img/bg.webp") no-repeat center center;background-size:cover;color:var(--light-bg-color-1)}.section-contact .overlay{position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,0.8)}.section-contact .section-header{color:var(--light-bg-color-1)}.section-contact .contacts{display:flex;width:100%;flex-wrap:wrap;justify-content:center;align-items:center;gap:30px}.section-contact .contacts div{display:flex;justify-content:center;align-items:center;flex-direction:column}.section-contact .contacts div .contact-icon{font-size:75px;color:var(--light-bg-color-1);margin:30px 5px}.section-contact .contacts .contact-btn{display:block;font-size:20px;white-space:nowrap;min-width:350px;height:50px;border-radius:50px;text-align:center;width:auto;padding:10px 25px}.section-contact .contacts .contact-btn:hover{opacity:0.8}.section-contact .contacts .contact-btn.revealed{opacity:1 !important;cursor:default}.section-contact .contacts .contact-btn.revealed span{cursor:text}.section-contact .location{width:100%;text-align:center;color:var(--light-bg-color-1);padding:30px 15px;white-space:nowrap}</style>
     <title>Piotr Szymański | Fullstack Webdeveloper</title>
   </head>
 
   <body
     id="body"
-    class="pl"
+    class="en"
   >
     <nav class="navbar">
       <div class="container">
@@ -65,15 +55,24 @@
         </h1>
 
         <div id="language">
-          <i
-            class="bi bi-globe"
+          <svg
+            class="ui-icon"
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
             style="margin-right: 5px"
-          ></i>
+          >
+            <path
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+              fill="currentColor"
+            ></path>
+          </svg>
           <div
             class="custom-select"
             style="width: 45px"
           >
-            <select>
+            <select aria-label="Language">
               <option
                 id="deflng"
                 value="default"
@@ -91,28 +90,82 @@
         <ul
           style="display: none"
           class="nav pl"
+          aria-label="Nawigacja"
         >
           <li>
             <a href="#about">
-              <span class="hide-lg"><i class="bi bi-person"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">O mnie</span>
             </a>
           </li>
           <li>
             <a href="#projects">
-              <span class="hide-lg"><i class="bi bi-grid"></i></span>
-              <span class="hide-sm">Projekty</span></a
-            >
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+                  ></path></svg
+              ></span>
+              <span class="hide-sm">Projekty</span>
+            </a>
           </li>
           <li>
             <a href="#skills">
-              <span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">Umiejętności</span>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <span class="hide-lg"><i class="bi bi-envelope"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">Kontakt</span>
             </a>
           </li>
@@ -122,28 +175,82 @@
         <ul
           style="display: none"
           class="nav en"
+          aria-label="Navigation"
         >
           <li>
             <a href="#about">
-              <span class="hide-lg"><i class="bi bi-person"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">About</span>
             </a>
           </li>
           <li>
             <a href="#projects">
-              <span class="hide-lg"><i class="bi bi-grid"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">Projects</span>
             </a>
           </li>
           <li>
             <a href="#skills">
-              <span class="hide-lg"><i class="bi bi-bar-chart-line"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">Skills</span>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <span class="hide-lg"><i class="bi bi-envelope"></i></span>
+              <span
+                class="hide-lg"
+                aria-hidden="true"
+                ><svg
+                  class="ui-icon"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  ></path></svg
+              ></span>
               <span class="hide-sm">Contact</span>
             </a>
           </li>
@@ -151,827 +258,1018 @@
       </div>
     </nav>
 
-    <!-- SECTION ABOUT -->
-    <section
-      id="about"
-      class="main section-about"
-    >
-      <div class="container">
-        <div>
-          <h1 style="margin-bottom: 20px">
-            <p style="line-height: 80%; margin-bottom: 5px">Piotr Szymański</p>
-            <p style="font-weight: 100; font-size: 18px; opacity: 0.5">Fullstack Developer</p>
-          </h1>
-          <h3 style="font-weight: 100">
-            <div
-              style="display: none; margin-bottom: 0px"
-              class="pl"
-            >
-              <p style="margin-bottom: 15px; font-size: 16px">
-                Jestem odpowiedzialnym i profesjonalnym software developerem, który z zaangażowaniem
-                podchodzi do powierzonych zadań. Jeśli się czegoś podejmuję, realizuję to w pełni,
-                dbając o jakość i terminowość. W przypadku napotkania problemów technicznych
-                traktuję je jako naturalny element procesu - chętnie pogłębiam swoją wiedzę, również
-                poza standardowymi godzinami pracy, aby znaleźć możliwie najlepsze rozwiązanie.
-                <br /><br />Dużą wagę przykładam do komunikacji i współpracy zespołowej. Potrafię
-                uważnie słuchać, analizować potrzeby oraz proponować konkretne i przemyślane
-                rozwiązania. Zaufanie w pracy traktuję bardzo poważnie - staram się je konsekwentnie
-                budować i nigdy nie zawieść. Jestem osobą stabilną w swoich decyzjach, na którą
-                można zawsze liczyć, dlatego też, jeżeli zajdzie taka potrzeba z przyjemnością
-                wspieram pozostałych członków zespołu.
+    <main id="main">
+      <!-- SECTION ABOUT -->
+      <section
+        id="about"
+        class="main section-about"
+      >
+        <div class="container">
+          <div>
+            <h1 style="margin-bottom: 20px">
+              <p style="line-height: 80%; margin-bottom: 5px">Piotr Szymański</p>
+              <p
+                class="hero-role"
+                style="font-weight: 100; font-size: 18px"
+              >
+                Fullstack Developer
               </p>
+            </h1>
+            <div class="hero-bio">
+              <div
+                style="display: none; margin-bottom: 0px"
+                class="pl"
+              >
+                <p style="margin-bottom: 15px; font-size: 16px">
+                  Jestem odpowiedzialnym i profesjonalnym software developerem, który z zaangażowaniem
+                  podchodzi do powierzonych zadań. Jeśli się czegoś podejmuję, realizuję to w pełni,
+                  dbając o jakość i terminowość. W przypadku napotkania problemów technicznych
+                  traktuję je jako naturalny element procesu - chętnie pogłębiam swoją wiedzę,
+                  również poza standardowymi godzinami pracy, aby znaleźć możliwie najlepsze
+                  rozwiązanie. <br /><br />Dużą wagę przykładam do komunikacji i współpracy
+                  zespołowej. Potrafię uważnie słuchać, analizować potrzeby oraz proponować konkretne
+                  i przemyślane rozwiązania. Zaufanie w pracy traktuję bardzo poważnie - staram się
+                  je konsekwentnie budować i nigdy nie zawieść. Jestem osobą stabilną w swoich
+                  decyzjach, na którą można zawsze liczyć, dlatego też, jeżeli zajdzie taka potrzeba
+                  z przyjemnością wspieram pozostałych członków zespołu.
+                </p>
+              </div>
+              <div
+                style="display: none; margin-bottom: 0px"
+                class="en"
+              >
+                <p style="margin-bottom: 15px; font-size: 16px">
+                  I am a responsible and professional software developer who approaches tasks with
+                  strong commitment and ownership. When I take on a responsibility, I follow it
+                  through with a focus on quality and timely delivery. I see technical challenges as
+                  a natural part of the process and I am willing to deepen my knowledge - even beyond
+                  regular working hours - to find the most effective solutions. <br /><br />I place
+                  high value on clear communication and teamwork. I listen carefully, analyze
+                  requirements, and propose well-thought-out, practical solutions. I take trust
+                  seriously and consistently strive to meet expectations placed on me. I am reliable
+                  and consistent in my decisions, and I am always willing to support my team when
+                  needed.
+                </p>
+              </div>
             </div>
-            <div
-              style="display: none; margin-bottom: 0px"
-              class="en"
+            <a
+              href="https://www.linkedin.com/in/pszym/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-bg-rotate"
             >
-              <p style="margin-bottom: 15px; font-size: 16px">
-                I am a responsible and professional software developer who approaches tasks with
-                strong commitment and ownership. When I take on a responsibility, I follow it
-                through with a focus on quality and timely delivery. I see technical challenges as a
-                natural part of the process and I am willing to deepen my knowledge - even beyond
-                regular working hours - to find the most effective solutions. <br /><br />I place
-                high value on clear communication and teamwork. I listen carefully, analyze
-                requirements, and propose well-thought-out, practical solutions. I take trust
-                seriously and consistently strive to meet expectations placed on me. I am reliable
-                and consistent in my decisions, and I am always willing to support my team when
-                needed.
-              </p>
-            </div>
-          </h3>
-          <a
-            href="https://www.linkedin.com/in/pszym/"
-            target="_blank"
-            class="btn btn-bg-rotate"
-          >
-            <span>LinkedIn</span>
-          </a>
-          <a
-            href="./download/cv-resume-piotr-szymanski.pdf"
-            target="_blank"
-            class="btn btn-bg-rotate"
-          >
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="./download/cv-resume-piotr-szymanski.pdf"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-bg-rotate"
+            >
+              <span
+                style="display: none"
+                class="pl"
+                >CV.pdf</span
+              >
+              <span
+                style="display: none"
+                class="en"
+                >resume.pdf</span
+              >
+            </a>
+          </div>
+          <img
+            class="pl lang-photo"
+            src="./img/photo-pl.webp"
+            alt="Piotr Szymański"
+            width="700"
+            height="780"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="en lang-photo"
+            src="./img/photo-en.webp"
+            alt="Piotr Szymański"
+            width="700"
+            height="780"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <!-- SECTION PROJECTS -->
+      <section
+        id="projects"
+        class="main section-projects"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <h2 class="section-header big">
             <span
               style="display: none"
               class="pl"
-              >CV.pdf</span
+              >Projekty</span
             >
             <span
               style="display: none"
               class="en"
-              >resume.pdf</span
+              >Projects</span
             >
-          </a>
-        </div>
-        <img
-          style="display: none"
-          class="pl"
-          src="./img/photo-pl.png"
-          alt="Piotr Szymański"
-        />
-        <img
-          style="display: none"
-          class="en"
-          src="./img/photo-en.png"
-          alt="Piotr Szymański"
-        />
-      </div>
-    </section>
+          </h2>
+          <div class="subheading">
+            <p
+              style="display: none"
+              class="pl"
+            >
+              Poniżej przedstawiam kilka swoich projektów. Bez względu na projekt jaki przychodzi mi
+              zrealizować, zawsze dbam o każdy szczegół, zarówno wizualny jak i techniczny.
+            </p>
+            <p
+              style="display: none"
+              class="en"
+            >
+              These are some projects that I worked on. I have created them mainly to better
+              understand the technology that I use. No matter what is project about, I always try to
+              take care of both details and technicals.
+            </p>
+          </div>
+          <div class="section-projects-inner">
+            <div style="width: 100%">
+              <div class="carousel-wrapper">
+                <div class="carousel">
+                  <!-- goBIG Forms -->
+                  <div class="carousel-div initial">
+                    <h3 class="slide-title">goBIG Forms (Main Project)</h3>
+                    <p class="slide-badges">
+                      <span>React</span>
+                      <span>Next.js</span>
+                      <span>Node</span>
+                      <span>Express.js</span>
+                      <span>TypeScript</span>
+                      <span>Clerk</span>
+                      <span>MongoDB</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Aplikacja typu SaaS do budowy formularzy, umożliwiającą tworzenie
+                        dynamicznych formularzy za pomocą interfejsu drag-and-drop oraz ich publiczne
+                        udostępnianie poprzez linki. System zawiera bezpieczne uwierzytelnianie
+                        (Clerk), panel użytkownika z analityką oraz obsługę zbierania danych w czasie
+                        rzeczywistym opartą o Prisma i PostgreSQL. Całość zaprojektowano z myślą o
+                        skalowalności, czystej architekturze i intuicyjnej obsłudze dla osób
+                        nietechnicznych.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >SaaS-style form builder application, featuring a drag-and-drop interface for
+                        creating dynamic, shareable forms. The platform includes secure
+                        authentication with Clerk, a user dashboard with analytics, and real-time
+                        data collection powered by Prisma and PostgreSQL. It’s designed with
+                        scalability, clean architecture, and an intuitive experience tailored for
+                        non-technical users.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-gobig-forms.webp"
+                      alt="goBIG Forms"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://gobig-forms.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                  </div>
 
-    <!-- SECTION PROJECTS -->
-    <section
-      id="projects"
-      class="main section-projects"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <h2 class="section-header big">
-          <span
-            style="display: none"
-            class="pl"
-            >Projekty</span
-          >
-          <span
-            style="display: none"
-            class="en"
-            >Projects</span
-          >
-        </h2>
-        <div class="subheading">
-          <p
-            style="display: none"
-            class="pl"
-          >
-            Poniżej przedstawiam kilka swoich projektów. Bez względu na projekt jaki przychodzi mi
-            zrealizować, zawsze dbam o każdy szczegół, zarówno wizualny jak i techniczny.
-          </p>
-          <p
-            style="display: none"
-            class="en"
-          >
-            These are some projects that I worked on. I have created them mainly to better
-            understand the technology that I use. No matter what is project about, I always try to
-            take care of both details and technicals.
-          </p>
-        </div>
-        <div class="section-projects-inner">
-          <div style="width: 100%">
-            <div class="carousel-wrapper">
-              <div class="carousel">
-                <!-- goBIG Forms -->
-                <div class="carousel-div initial">
-                  <h3 class="slide-title">goBIG Forms (Main Project)</h3>
-                  <p class="slide-badges">
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Clerk</span>
-                    <span>Prisma</span>
-                    <span>PostgreSQL</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Aplikacja typu SaaS do budowy formularzy, umożliwiającą tworzenie
-                      dynamicznych formularzy za pomocą interfejsu drag-and-drop oraz ich publiczne
-                      udostępnianie poprzez linki. System zawiera bezpieczne uwierzytelnianie
-                      (Clerk), panel użytkownika z analityką oraz obsługę zbierania danych w czasie
-                      rzeczywistym opartą o Prisma i PostgreSQL. Całość zaprojektowano z myślą o
-                      skalowalności, czystej architekturze i intuicyjnej obsłudze dla osób
-                      nietechnicznych.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >SaaS-style form builder application, featuring a drag-and-drop interface for
-                      creating dynamic, shareable forms. The platform includes secure authentication
-                      with Clerk, a user dashboard with analytics, and real-time data collection
-                      powered by Prisma and PostgreSQL. It’s designed with scalability, clean
-                      architecture, and an intuitive experience tailored for non-technical
-                      users.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-gobig-forms.jpg"
-                    alt="goBIG Forms"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://gobig-forms.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
+                  <!-- Business card -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Business Card proposal</h3>
+                    <p class="slide-badges">
+                      <span>HTML</span>
+                      <span>Javascript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Moja propozycja "Internetowej wizytówki biznesowej" czyli minimum dla kogoś,
+                        kto potrzebuje mieć podstawowe informacje o sobie w sieci. Wizytówka jest
+                        zawsze widoczna w całości bez względu na rozdzielczosć przeglądarki oraz jej
+                        ratio. Różne widoki dla horyzontalnego oraz wertykalnego układu.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >My proposal for an "Internet business card" is the minimum for someone who
+                        needs to have basic information about themselves on the Internet. The
+                        business card is always visible in its entirety regardless of the browser
+                        resolution and its ratio. A different view for a horizontal and another for a
+                        vertical layout.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-reddot.webp"
+                      alt="Business card"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://reddot-homepage.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                  </div>
+
+                  <!-- AI Car -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">AI Learning</h3>
+                    <p class="slide-badges">
+                      <span>Javascript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Wizualne przedstawienie uproszczonego modelu sztucznej inteligencji, która
+                        jest w stanie się uczyć. Użyj ikon w centum ekranu. Dokonuj zapisu w momencie
+                        gdy twój samochód zajedzie najdalej i odśwież stronę. Powtarzaj ten proces aż
+                        samochodzik będzie w stanie sam ominąć wszystkie inne pojazdy.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >A visual representation of a simplified model of artificial intelligence
+                        that is cheap to learn. Use the icons in the center of the screen. Make a
+                        stop when your car has gone the furthest and refresh the page. Repeat this
+                        step until it is able to avoid all other vehicles on its own.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-ai.webp"
+                      alt="AI"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://ai-car.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                    <a
+                      href="https://github.com/szymanskicode/ai-car"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github</span></a>
+                  </div>
+
+                  <!-- Shooter Game Slide -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">JS Platformer Shooter</h3>
+                    <p class="slide-badges">
+                      <span>Typescript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Mini gra wykonana w ramach zabawy i zapoznania się rysowaniem w JS na
+                        elemencie canvas. Użyj spacji aby strzelać i zniszczyć jak najwięcej
+                        przeciwników. Nie strzelaj do świecących przeciwników - oni dają ci
+                        nieskończoną ilość pocisków.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >A mini game made for fun and to learn how to draw in JS on the canvas
+                        element. Use spacebar to shoot and destroy as many enemies as possible. Don't
+                        shoot at glowing enemies - they give you an infinite amount of bullets.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/shooter-game.webp"
+                      alt="Shooter Game"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://shooter-game-ts.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                    <a
+                      href="https://github.com/szymanskicode/shooter-game-ts"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github</span></a>
+                  </div>
+
+                  <!-- Adfinder Slide -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Adfinder</h3>
+                    <p class="slide-badges">
+                      <span>React</span>
+                      <span>Next.js</span>
+                      <span>TypeScript</span>
+                      <span>Clerk</span>
+                      <span>Prisma</span>
+                      <span>PostgreSQL</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Projekt wykonany na potrzeby biura nieruchmości pozwalający zarządzać
+                        ofertami, ogłoszeniami oraz agentami. Baza danych zasilana jest na bieżąco
+                        aktualnymi ogłoszeniami z Internetu.
+                      </span>
+                      <span
+                        style="display: none"
+                        class="en"
+                        >Project realized for real estate agency, which allows to manage offers,
+                        announcements and agents. The database is fed with new advertisements from
+                        the Internet.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-adfinder.webp"
+                      alt="Adfinder project"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://adfinder-client-demo.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                    <a
+                      href="https://github.com/szymanskicode/adfinder-client-demo"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github client</span></a>
+                    <a
+                      href="https://github.com/szymanskicode/adfinder-server-demo"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github server</span></a>
+                  </div>
+
+                  <!-- Memory Slide -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Memory</h3>
+                    <p class="slide-badges">
+                      <span>JavaScript</span>
+                      <span>React</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Wszystkim dobrze znana gra wykonana w React. Projekt na zaliczenie kursu z
+                        programowania w React.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >A well-known game to everyone. Final project of React programming
+                        course.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-memory.webp"
+                      alt="Memory project"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://pszym-memory.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                    <a
+                      href="https://github.com/szymanskicode/memory"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github</span></a>
+                  </div>
+
+                  <!-- Casper Public RPC -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Casper Public RPC</h3>
+                    <p class="slide-badges">
+                      <span>React</span>
+                      <span>Typescript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Aktualnie działający serwis dla Casper Network świadczący dostęp do
+                        publicznego enpointu RPC, Dodatkowym elementem serwisu jest wizualizacja
+                        requestów w sieci Casper Network.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >Currently operating service for Casper Network providing access to the
+                        public RPC enpoint and visualization of requests on the network.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-casper-public-endpoint.webp"
+                      alt="Casper RPC"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://casper-public-rpc.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                  </div>
+
+                  <!-- Casper Compass -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Casper Compass</h3>
+                    <p class="slide-badges">
+                      <span>React</span>
+                      <span>Typescript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Projekt mający na celu wyszukiwanie i śledzenie smart kontratków w sieci
+                        Casper Network. Projekt został przerwany.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >A project aimed at searching and tracking smart contracts in the Casper
+                        Network. The project has not been completed.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-casper-compass.webp"
+                      alt="Casper Compass"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://casper-compass.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                  </div>
+
+                  <!-- Natek -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Natek</h3>
+                    <p class="slide-badges">
+                      <span>React</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Projekt stworzony dla Natek, jako propozycja odświeżenia starej szaty
+                        graficznej oraz propozycja nowego panelu użytkownika wraz z centrum
+                        zarządzania ogłoszeniami oraz aplikacjami o pracę. (Server developersji
+                        został wyłączony - brak możliwości zalogowania się.)</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >A project created for Natek to refresh the old graphic design and propose a
+                        new user panel with admin center for managing job advertisements and
+                        applications. (Backend server terminated)</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-natek.webp"
+                      alt="Natek"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://natek-client-demo.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Live demo</span></a>
+                  </div>
+
+                  <!-- Portfolio Slide -->
+                  <div class="carousel-div">
+                    <h3 class="slide-title">Portfolio</h3>
+                    <p class="slide-badges">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </p>
+                    <p class="slide-subtitle">
+                      <span
+                        style="display: none"
+                        class="pl"
+                        >Prosta strona HTML z odrobiną JavaScriptu, co nie oznacz, że nie trzeba dbać
+                        o szczegóły oraz spójny, czysty i schludny wygląd.</span
+                      >
+                      <span
+                        style="display: none"
+                        class="en"
+                        >Simple HTML page with a bit of JavaScript, but it doesn't mean you don't
+                        have to care about detiles and also nice and neat design.</span
+                      >
+                    </p>
+                    <img
+                      src="img/projects/project-szymanskicode.webp"
+                      alt="Portfolio"
+                      width="900"
+                      height="507"
+                      loading="lazy"
+                      decoding="async"
+                      style="border: 1px solid transparent"
+                    />
+                    <a
+                      href="https://github.com/szymanskicode/szymanskicode-portfolio"
+                      target="_blank"
+                      rel="noopener"
+                     class="btn btn-bg-rotate invert"><span>Github</span></a>
+                  </div>
+
+                  <button
+                    class="carousel-button--next"
+                    type="button"
+                    aria-label="Next project"
+                  ></button>
+                  <button
+                    class="carousel-button--prev"
+                    type="button"
+                    aria-label="Previous project"
+                  ></button>
                 </div>
-
-                <!-- Business card -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Business Card proposal</h3>
-                  <p class="slide-badges">
-                    <span>HTML</span>
-                    <span>Javascript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Moja propozycja "Internetowej wizytówki biznesowej" czyli minimum dla kogoś,
-                      kto potrzebuje mieć podstawowe informacje o sobie w sieci. Wizytówka jest
-                      zawsze widoczna w całości bez względu na rozdzielczosć przeglądarki oraz jej
-                      ratio. Różne widoki dla horyzontalnego oraz wertykalnego układu.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >My proposal for an "Internet business card" is the minimum for someone who
-                      needs to have basic information about themselves on the Internet. The business
-                      card is always visible in its entirety regardless of the browser resolution
-                      and its ratio. A different view for a horizontal and another for a vertical
-                      layout.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-reddot.jpg"
-                    alt="Business card"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://reddot-homepage.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                </div>
-
-                <!-- AI Car -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">AI Learning</h3>
-                  <p class="slide-badges">
-                    <span>Javascript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Wizualne przedstawienie uproszczonego modelu sztucznej inteligencji, która
-                      jest w stanie się uczyć. Użyj ikon w centum ekranu. Dokonuj zapisu w momencie
-                      gdy twój samochód zajedzie najdalej i odśwież stronę. Powtarzaj ten proces aż
-                      samochodzik będzie w stanie sam ominąć wszystkie inne pojazdy.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >A visual representation of a simplified model of artificial intelligence that
-                      is cheap to learn. Use the icons in the center of the screen. Make a stop when
-                      your car has gone the furthest and refresh the page. Repeat this step until it
-                      is able to avoid all other vehicles on its own.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-ai.jpg"
-                    alt="AI"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://ai-car.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                  <a
-                    href="https://github.com/szymanskicode/ai-car"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github</span></button>
-                  </a>
-                </div>
-
-                <!-- Shooter Game Slide -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">JS Platformer Shooter</h3>
-                  <p class="slide-badges">
-                    <span>Typescript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Mini gra wykonana w ramach zabawy i zapoznania się rysowaniem w JS na
-                      elemencie canvas. Użyj spacji aby strzelać i zniszczyć jak najwięcej
-                      przeciwników. Nie strzelaj do świecących przeciwników - oni dają ci
-                      nieskończoną ilość pocisków.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >A mini game made for fun and to learn how to draw in JS on the canvas
-                      element. Use spacebar to shoot and destroy as many enemies as possible. Don't
-                      shoot at glowing enemies - they give you an infinite amount of bullets.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/shooter-game.jpg"
-                    alt="Shooter Game"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://shooter-game-ts.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                  <a
-                    href="https://github.com/szymanskicode/shooter-game-ts"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github</span></button>
-                  </a>
-                </div>
-
-                <!-- Adfinder Slide -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Adfinder</h3>
-                  <p class="slide-badges">
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>MongoDB</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Projekt wykonany na potrzeby biura nieruchmości pozwalający zarządzać
-                      ofertami, ogłoszeniami oraz agentami. Baza danych zasilana jest na bieżąco
-                      aktualnymi ogłoszeniami z Internetu.
-                    </span>
-                    <span
-                      style="display: none"
-                      class="en"
-                      >Project realized for real estate agency, which allows to manage offers,
-                      announcements and agents. The database is fed with new advertisements from the
-                      Internet.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-adfinder.jpg"
-                    alt="Adfinder project"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://adfinder-client-demo.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                  <a
-                    href="https://github.com/szymanskicode/adfinder-client-demo"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github client</span></button>
-                  </a>
-                  <a
-                    href="https://github.com/szymanskicode/adfinder-server-demo"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github server</span></button>
-                  </a>
-                </div>
-
-                <!-- Memory Slide -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Memory</h3>
-                  <p class="slide-badges">
-                    <span>JavaScript</span>
-                    <span>React</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Wszystkim dobrze znana gra wykonana w React. Projekt na zaliczenie kursu z
-                      programowania w React.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >A well-known game to everyone. Final project of React programming
-                      course.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-memory.jpg"
-                    alt="Memory project"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://pszym-memory.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                  <a
-                    href="https://github.com/szymanskicode/memory"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github</span></button>
-                  </a>
-                </div>
-
-                <!-- Casper Public RPC -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Casper Public RPC</h3>
-                  <p class="slide-badges">
-                    <span>React</span>
-                    <span>Typescript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Aktualnie działający serwis dla Casper Network świadczący dostęp do
-                      publicznego enpointu RPC, Dodatkowym elementem serwisu jest wizualizacja
-                      requestów w sieci Casper Network.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >Currently operating service for Casper Network providing access to the public
-                      RPC enpoint and visualization of requests on the network.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-casper-public-endpoint.jpg"
-                    alt="Casper RPC"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://casper-public-rpc.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                </div>
-
-                <!-- Casper Compass -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Casper Compass</h3>
-                  <p class="slide-badges">
-                    <span>React</span>
-                    <span>Typescript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Projekt mający na celu wyszukiwanie i śledzenie smart kontratków w sieci
-                      Casper Network. Projekt został przerwany.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >A project aimed at searching and tracking smart contracts in the Casper
-                      Network. The project has not been completed.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-casper-compass.jpg"
-                    alt="Casper Compass"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://casper-compass.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                </div>
-
-                <!-- Natek -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Natek</h3>
-                  <p class="slide-badges">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Projekt stworzony dla Natek, jako propozycja odświeżenia starej szaty
-                      graficznej oraz propozycja nowego panelu użytkownika wraz z centrum
-                      zarządzania ogłoszeniami oraz aplikacjami o pracę. (Server developersji został
-                      wyłączony - brak możliwości zalogowania się.)</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >A project created for Natek to refresh the old graphic design and propose a
-                      new user panel with admin center for managing job advertisements and
-                      applications. (Backend server terminated)</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-natek.jpg"
-                    alt="Natek"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://natek-client-demo.vercel.app"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Live demo</span></button>
-                  </a>
-                </div>
-
-                <!-- Portfolio Slide -->
-                <div class="carousel-div">
-                  <h3 class="slide-title">Portfolio</h3>
-                  <p class="slide-badges">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                  </p>
-                  <p class="slide-subtitle">
-                    <span
-                      style="display: none"
-                      class="pl"
-                      >Prosta strona HTML z odrobiną JavaScriptu, co nie oznacz, że nie trzeba dbać
-                      o szczegóły oraz spójny, czysty i schludny wygląd.</span
-                    >
-                    <span
-                      style="display: none"
-                      class="en"
-                      >Simple HTML page with a bit of JavaScript, but it doesn't mean you don't have
-                      to care about detiles and also nice and neat design.</span
-                    >
-                  </p>
-                  <img
-                    src="img/projects/project-szymanskicode.jpg"
-                    alt="Portfolio"
-                    style="border: 1px solid transparent"
-                  />
-                  <a
-                    href="https://github.com/szymanskicode/szymanskicode-portfolio"
-                    target="_blank"
-                  >
-                    <button class="btn btn-bg-rotate invert"><span>Github</span></button>
-                  </a>
-                </div>
-
-                <div class="carousel-button--next"></div>
-                <div class="carousel-button--prev"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION SKILLS -->
-    <section
-      id="skills"
-      class="main section-skills"
-    >
-      <div class="container">
-        <h2
-          class="section-header big pl"
-          style="display: none"
-        >
-          Umiejętności
-        </h2>
-        <h2
-          class="section-header big en"
-          style="display: none"
-        >
-          Skills
-        </h2>
-        <div class="subheading">
-          <p
+      <!-- SECTION SKILLS -->
+      <section
+        id="skills"
+        class="main section-skills"
+      >
+        <div class="container">
+          <h2
+            class="section-header big pl"
             style="display: none"
-            class="pl"
           >
-            Poniżej znajdują się języki, technologie oraz narzędzia, jakimi posługuję się każdego
-            dnia. Chcąc być wszechstronnym, jestem otwarty na poznawanie kolejnych technologii,
-            dlatego nieustannie pracuję nad swoim rozwojem. Jeżeli zajdzie potrzeba poznania czegoś
-            nowego, okiełznam to z przyjemnością. Wykorzystująć bardzo dobrą znajomość React'a
-            ostatnio skupiłem się nad React Nativie dzięku któremu jestem w stanie tworzyć aplikacje
-            mobilne na systemy Android oraz iOS.
-          </p>
-          <p
+            Umiejętności
+          </h2>
+          <h2
+            class="section-header big en"
             style="display: none"
-            class="en"
           >
-            Technologies and programming languages ​​that I have learned so far you can find below.
-            As I want to be versatile, I am open to learn other new technologies, which is why I am
-            constantly developing my horizons. Taking advantage of very good knowledge of React I
-            have focused recently on React Native thanks to which I am able to create mobile
-            applications for Android and iOS systems.
-          </p>
-        </div>
-        <div class="skills-list">
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/javascript.png"
-                alt="JavaScript"
-            /></span>
-            <h3>JavaScript</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/typescript.png"
-                alt="TypeScript"
-            /></span>
-            <h3>TypeScript</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/react.png"
-                alt="React"
-            /></span>
-            <h3>React</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/native.png"
-                alt="ReactNative"
-            /></span>
-            <h3>React Native</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/redux.png"
-                alt="Redux"
-            /></span>
-            <h3>Redux</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/next.png"
-                alt="Next.js"
-            /></span>
-            <h3>Next.js</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/nodejs.png"
-                alt="Node.js"
-            /></span>
-            <h3>Node.js</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/express.png"
-                alt="Express.js"
-            /></span>
-            <h3>Express.js</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/mongodb.png"
-                alt="MongoDB"
-            /></span>
-            <h3>MongoDB</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/bootstrap.png"
-                alt="Bootstrap"
-            /></span>
-            <h3>Bootstrap</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/materialui.png"
-                alt="MaterialUI"
-            /></span>
-            <h3>MaterialUI</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/html.png"
-                alt="HTML"
-            /></span>
-            <h3>HTML5</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/css.png"
-                alt="CSS"
-            /></span>
-            <h3>CSS3</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/scss.png"
-                alt="SCSS"
-            /></span>
-            <h3>SCSS</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/dx.png"
-                alt="DX"
-            /></span>
-            <h3>DevExtreme</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/git.png"
-                alt="Git"
-            /></span>
-            <h3>Git</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/github.png"
-                alt="Github"
-            /></span>
-            <h3>Github</h3>
-          </div>
-          <div class="skill">
-            <span
-              ><img
-                src="./img/icons/figma.png"
-                alt="Figma"
-            /></span>
-            <h3>Figma</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION CONTACT -->
-    <section
-      id="contact"
-      class="main section-contact"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <h2 class="section-header big">
-          <span
-            style="display: none"
-            class="pl"
-            >Kontakt</span
-          >
-          <span
-            style="display: none"
-            class="en"
-            >Contact</span
-          >
-        </h2>
-        <div class="subheading">
-          <p
-            style="display: none"
-            class="pl"
-          >
-            W sprawie zapytań lub oferty zapraszam do kontaktu. Z przyjemnością spotkam się
-            osobiście, lub zdalenie w zależności od konieczności.
-          </p>
-          <p
-            style="display: none"
-            class="en"
-          >
-            Feel free to contact me with any inquiries or offers. I will be glad to meet you in
-            person or remotely, depending on your expectations.
-          </p>
-        </div>
-        <div class="contacts">
-          <div>
-            <i class="bi bi-phone"></i>
-            <div
-              id="ctel"
-              class="btn contact-btn invert"
+            Skills
+          </h2>
+          <div class="subheading">
+            <p
+              style="display: none"
+              class="pl"
             >
+              Poniżej znajdują się języki, technologie oraz narzędzia, jakimi posługuję się każdego
+              dnia. Chcąc być wszechstronnym, jestem otwarty na poznawanie kolejnych technologii,
+              dlatego nieustannie pracuję nad swoim rozwojem. Jeżeli zajdzie potrzeba poznania
+              czegoś nowego, okiełznam to z przyjemnością. Wykorzystująć bardzo dobrą znajomość
+              React'a ostatnio skupiłem się nad React Nativie dzięku któremu jestem w stanie
+              tworzyć aplikacje mobilne na systemy Android oraz iOS.
+            </p>
+            <p
+              style="display: none"
+              class="en"
+            >
+              Technologies and programming languages ​​that I have learned so far you can find
+              below. As I want to be versatile, I am open to learn other new technologies, which is
+              why I am constantly developing my horizons. Taking advantage of very good knowledge
+              of React I have focused recently on React Native thanks to which I am able to create
+              mobile applications for Android and iOS systems.
+            </p>
+          </div>
+          <div class="skills-list">
+            <div class="skill">
               <span
-                style="display: none"
-                class="pl"
-                >Pokaż numer</span
-              >
-              <span
-                style="display: none"
-                class="en"
-                >Show number</span
-              >
+                ><img
+                  src="./img/icons/javascript.webp"
+                  alt="JavaScript"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>JavaScript</h3>
             </div>
-          </div>
-          <div>
-            <i class="bi bi-envelope"></i>
-            <div
-              id="cadd"
-              class="btn contact-btn invert"
-            >
+            <div class="skill">
               <span
-                style="display: none"
-                class="pl"
-                >Pokaż adres</span
-              >
+                ><img
+                  src="./img/icons/typescript.webp"
+                  alt="TypeScript"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>TypeScript</h3>
+            </div>
+            <div class="skill">
               <span
-                style="display: none"
-                class="en"
-                >Show address</span
-              >
+                ><img
+                  src="./img/icons/react.webp"
+                  alt="React"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>React</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/native.webp"
+                  alt="ReactNative"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>React Native</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/redux.webp"
+                  alt="Redux"
+                  width="45"
+                  height="41"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Redux</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/next.webp"
+                  alt="Next.js"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Next.js</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/nodejs.webp"
+                  alt="Node.js"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Node.js</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/express.webp"
+                  alt="Express.js"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Express.js</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/mongodb.webp"
+                  alt="MongoDB"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>MongoDB</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/bootstrap.webp"
+                  alt="Bootstrap"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/materialui.webp"
+                  alt="MaterialUI"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>MaterialUI</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/html.webp"
+                  alt="HTML"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>HTML5</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/css.webp"
+                  alt="CSS"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>CSS3</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/scss.webp"
+                  alt="SCSS"
+                  width="45"
+                  height="34"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>SCSS</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/dx.webp"
+                  alt="DX"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>DevExtreme</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/git.webp"
+                  alt="Git"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Git</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/github.webp"
+                  alt="Github"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Github</h3>
+            </div>
+            <div class="skill">
+              <span
+                ><img
+                  src="./img/icons/figma.webp"
+                  alt="Figma"
+                  width="45"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <h3>Figma</h3>
             </div>
           </div>
         </div>
-        <div class="location">
-          <span
-            style="display: none"
-            class="pl"
-            ><i class="bi bi-house"></i> Wrocław / zdalnie</span
-          >
-          <span
-            style="display: none"
-            class="en"
-            ><i class="bi bi-house"></i> Wrocław / remotely</span
-          >
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <section
+        id="contact"
+        class="main section-contact"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <h2 class="section-header big">
+            <span
+              style="display: none"
+              class="pl"
+              >Kontakt</span
+            >
+            <span
+              style="display: none"
+              class="en"
+              >Contact</span
+            >
+          </h2>
+          <div class="subheading">
+            <p
+              style="display: none"
+              class="pl"
+            >
+              W sprawie zapytań lub oferty zapraszam do kontaktu. Z przyjemnością spotkam się
+              osobiście, lub zdalenie w zależności od konieczności.
+            </p>
+            <p
+              style="display: none"
+              class="en"
+            >
+              Feel free to contact me with any inquiries or offers. I will be glad to meet you in
+              person or remotely, depending on your expectations.
+            </p>
+          </div>
+          <div class="contacts">
+            <div>
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="75"
+                height="75"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                ></path>
+              </svg>
+              <button
+                id="ctel"
+                class="btn contact-btn invert"
+                type="button"
+              >
+                <span
+                  style="display: none"
+                  class="pl"
+                  >Pokaż numer</span
+                >
+                <span
+                  style="display: none"
+                  class="en"
+                  >Show number</span
+                >
+              </button>
+            </div>
+            <div>
+              <svg
+                class="contact-icon"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="75"
+                height="75"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                ></path>
+              </svg>
+              <button
+                id="cadd"
+                class="btn contact-btn invert"
+                type="button"
+              >
+                <span
+                  style="display: none"
+                  class="pl"
+                  >Pokaż adres</span
+                >
+                <span
+                  style="display: none"
+                  class="en"
+                  >Show address</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="location">
+            <span
+              style="display: none"
+              class="pl"
+            >
+              <svg
+                class="ui-icon"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                ></path>
+              </svg>
+              Wrocław / zdalnie</span
+            >
+            <span
+              style="display: none"
+              class="en"
+            >
+              <svg
+                class="ui-icon"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                ></path>
+              </svg>
+              Wrocław / remotely</span
+            >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- SCROLLDOWN ICON-->
     <div
       id="scroll"
       class="scrolldown-wrapper"
+      aria-hidden="true"
     >
       <div
         class="scrolldown"
@@ -984,6 +1282,9 @@
       </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script
+      src="js/main.js"
+      defer
+    ></script>
   </body>
 </html>
